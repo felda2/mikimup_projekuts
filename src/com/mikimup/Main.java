@@ -10,6 +10,8 @@ public class Main {
         ProductController controller = new ProductController();
         POSView view = new POSView();
 
+        view.txtStruk.setFont(new java.awt.Font("Monospaced", java.awt.Font.PLAIN, 12));
+
         refreshComboBox(controller, view);
 
         view.btnBayar.addActionListener(e -> processPayment(controller, view));
